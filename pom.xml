@@ -16,6 +16,11 @@
 
     <repositories>
         <repository>
+            <id>zhdc-maven</id>
+            <name>zhonghai</name>
+            <url>http://10.6.103.15:30081/repository/maven-public/</url>
+        </repository>
+        <!--<repository>
             <id>maven-net-cn</id>
             <name>Maven China Mirror</name>
             <url>http://maven.net.cn/content/groups/public/</url>
@@ -25,13 +30,13 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>
+        </repository>-->
     </repositories>
     <pluginRepositories>
         <pluginRepository>
-            <id>maven-net-cn</id>
-            <name>Maven China Mirror</name>
-            <url>http://maven.net.cn/content/groups/public/</url>
+            <id>nexus</id>
+            <name>local private nexus</name>
+            <url>http://maven.oschina.net/content/groups/public/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -39,6 +44,17 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
+        <!--<pluginRepository>
+            <id>maven-net-cn</id>
+            <name>Maven China Mirror</name>
+            <url>http://maven.net.cn/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>-->
     </pluginRepositories>
 
 </project>
